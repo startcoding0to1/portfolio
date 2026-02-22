@@ -1,1 +1,9 @@
-<h1>Alhumdulillah</h1>
+@if(name === '') {
+<div>
+  <input type="text" #nameInput placeholder="Enter your name">
+  <button (click)="name = nameInput.value.trim()">Proceed</button>
+</div>
+} @else {
+  <h1>Assalamalaikum</h1>
+  <h1>{{name}}</h1>
+}
